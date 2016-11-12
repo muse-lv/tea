@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>茶</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/checkout.css">
+	<link rel="stylesheet" href="css/woocommerce-layout.css">
+</head>
+<body>
+	<header class="header">	
+		<nav class="topbar">
+			<div class="topbar-content">
+				<div class="topbar-title">
+					<img src="images/cart1.png" alt="茶">
+					<span>购物车</span>
+					<a href="#">0</a>
+					<span>件</span>
+					<span>最近浏览</span>
+					<span>我的收藏</span>
+				</div>
+				<ul class="topbar-login">
+					<li class="topbar-login-login"><a href="#">登录</a></li>
+					<li class="topbar-login-register"><a href="#">注册</a></li>
+				</ul>
+			</div>
+		</nav>	
+		<div class="header-img">
+			<div class="logo">
+				<div class="logo-pic">
+					<a href="#"><img src="images/logo.png" alt="logo"></a>
+				</div>
+				<div class="logo-search">
+					<form name="search-form" id="search-form" action="">
+						<input type="text" name="search-input" id="search-input" value="早茶">
+						<input type="submit" name="search-submit" id="search-submit" value="搜索">
+					</form>
+				</div>
+				<div class="logo-list">
+					<div class="logo-list-content">
+						<ul>
+							<li><a href="product.html" class="green">早春新茶&nbsp;</a></li>
+							<li><a href="product.html">|&nbsp;陈年普洱&nbsp;|&nbsp;</a></li>
+							<li><a href="product.html" class="green">西湖龙井&nbsp;</a></li>
+							<li><a href="product.html">|&nbsp;顶级红袍&nbsp;|&nbsp;</a></li>
+							<li><a href="product.html" class="green">极品乌龙&nbsp;</a></li>
+							<li><a href="product.html">|&nbsp;浪漫花茶</a></li>
+						</ul>
+					</div>
+				</div>
+			
+			</div>
+			<div class="header-inner">
+				<div class="header-inner-content clearfix">
+					<div id="mobile-icon">
+						<a id="mobile-menu"><i class="icon-list-ul icon-2x"></i></a>
+						<a id="mobile-search"><i class="icon-search"></i></a>
+					</div>
+					<nav>
+						<ul class="main-menu">
+						    <li class="current-menu-parent"><a href="index.html">首页</a></li>
+						    <li class="menu-item-has-children">
+						        <a href="product.html">全部分类</a>
+                                <div class="menu-item-has-children-btn"><i class="icon-angle-down"></i></div>
+						        <ul class="sub-menu">
+						            <li><a href="#">铁观音</a></li>
+						            <li><a href="#">碧螺春</a></li>
+						            <li><a href="#">大红袍</a></li>
+						            <li class="menu-item-has-children secondary-menu-item-has-children">
+							            <a href="#">花茶</a>
+                                        <div class="menu-item-has-children-btn"><i class="icon-angle-down"></i></div>
+							            <ul class="sub-menu">
+							            	<li><a href="#">桃花</a></li>
+							            	<li><a href="#">樱花</a></li>
+							            	<li><a href="#">玫瑰花</a></li>
+							            </ul>
+						            </li>
+						        </ul>
+						    </li>
+						    <li><a href="product.html">早春新茶</a></li>
+						    <li><a href="#">陈年普洱</a></li>
+						    <li><a href="#">西湖龙井</a></li>
+						    <li><a href="#">顶级红袍</a></li>
+						    <li><a href="#">极品乌龙</a></li>
+						    <li><a href="#">浪漫花茶</a></li>
+						</ul>
+					</nav>				
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="container page-league">
+    <div class="col-md-12 col-sm-12">
+        <div class="woocommerce">
+            <div class="woocommerce-info">客户详情
+                <a href="#" class="showlogin">单击这里登录</a></div>
+            <form method="post" class="login" style="display:none;">
+                <p>如果您之前在我们网站消费过，请在下边框内输入您的资料。如果您是一个新顾客，请留意帐单&amp;配送部分。</p>
+                <p class="form-row form-row-first">
+                    <label for="username">用户名或电子邮件
+                        <span class="required">*</span></label>
+                    <input type="text" class="input-text" name="username" id="username"></p>
+                <p class="form-row form-row-last">
+                    <label for="password">密码
+                        <span class="required">*</span></label>
+                    <input class="input-text" type="password" name="password" id="password"></p>
+                <div class="clear"></div>
+                <p class="form-row">
+                    <input type="hidden" id="_wpnonce" name="_wpnonce" value="ebcdea7490">
+                    <input type="hidden" name="_wp_http_referer" value="/checkout/">
+                    <input type="submit" class="button" name="login" value="登录">
+                    <input type="hidden" name="redirect" value="http://tl.kissneck.cn/checkout/">
+                    <label for="rememberme" class="inline">
+                        <input name="rememberme" type="checkbox" id="rememberme" value="forever">记住我</label></p>
+                <p class="lost_password">
+                    <a href="http://tl.kissneck.cn/my-account/lost-password/">忘记密码？</a></p>
+                <div class="clear"></div>
+            </form>
+            <div class="woocommerce-info">有优惠券？
+                <a href="#" class="showcoupon">点这里输入你的代码</a></div>
+            <form class="checkout_coupon" method="post" style="display:none">
+                <p class="form-row form-row-first">
+                    <input type="text" name="coupon_code" class="input-text" placeholder="优惠券代码" id="coupon_code" value=""></p>
+                <p class="form-row form-row-last">
+                    <input type="submit" class="button" name="apply_coupon" value="使用优惠券"></p>
+                <div class="clear"></div>
+            </form>
+            <form name="checkout" method="post" class="checkout woocommerce-checkout" action="http://tl.kissneck.cn/checkout/" enctype="multipart/form-data">
+                <div class="col2-set" id="customer_details">
+                    <div class="col-1">
+                        <div class="woocommerce-billing-fields">
+                            <h3>账单详情</h3>
+                            <p class="form-row form-row form-row-first validate-required" id="billing_first_name_field">
+                                <label for="billing_first_name" class="">名字
+                                    <abbr class="required" title="(必填)">*</abbr></label>
+                                <input type="text" class="input-text " name="billing_first_name" id="billing_first_name" placeholder="" autocomplete="given-name" value=""></p>
+                            <p class="form-row form-row form-row-last validate-required" id="billing_last_name_field">
+                                <label for="billing_last_name" class="">姓氏
+                                    <abbr class="required" title="(必填)">*</abbr></label>
+                                <input type="text" class="input-text " name="billing_last_name" id="billing_last_name" placeholder="" autocomplete="family-name" value=""></p>
+                            <div class="clear"></div>
+                            <p class="form-row form-row form-row-wide" id="billing_company_field">
+                                <label for="billing_company" class="">公司名称</label>
+                                <input type="text" class="input-text " name="billing_company" id="billing_company" placeholder="" autocomplete="organization" value=""></p>
+                            <p class="form-row form-row form-row-first validate-required validate-email" id="billing_email_field">
+                                <label for="billing_email" class="">邮件
+                                    <abbr class="required" title="(必填)">*</abbr></label>
+                                <input type="email" class="input-text " name="billing_email" id="billing_email" placeholder="" autocomplete="email" value=""></p>
+                            <p class="form-row form-row form-row-last validate-required validate-phone" id="billing_phone_field">
+                                <label for="billing_phone" class="">电话
+                                    <abbr class="required" title="(必填)">*</abbr></label>
+                                <input type="tel" class="input-text " name="billing_phone" id="billing_phone" placeholder="" autocomplete="tel" value=""></p>
+                            <div class="clear"></div>
+                            <p class="form-row form-row form-row-wide address-field update_totals_on_change validate-required woocommerce-validated" id="billing_country_field">
+                                <label for="billing_country" class="">国家
+                                    <abbr class="required" title="(必填)">*</abbr></label>
+                                <select name="billing_country" id="billing_country" autocomplete="country" class="country_to_state country_select " tabindex="-1" title="国家 *">
+                                    <option value="">选择国家…</option>
+                                    <option value="UM">美国本土外小岛屿</option>
+                                    <option value="PW">Belau</option>
+                                    <option value="BQ">Bonaire, Saint Eustatius and Saba</option>
+                                    <option value="ST">São Tomé and Príncipe</option>
+                                    <option value="BL">Saint Barthélemy</option>
+                                    <option value="GB">United Kingdom (UK)</option>
+                                    <option value="US">United States (US)</option>
+                                    <option value="BT">不丹</option>
+                                    <option value="TL">东帝汶</option>
+                                    <option value="CN" selected="selected">中国</option>
+                                    <option value="CF">中非共和国</option>
+                                    <option value="DK">丹麦</option>
+                                    <option value="UA">乌克兰</option>
+                                    <option value="UZ">乌兹别克斯坦</option>
+                                    <option value="UG">乌干达</option>
+                                    <option value="UY">乌拉圭</option>
+                                    <option value="TD">乍得</option>
+                                    <option value="YE">也门</option>
+                                    <option value="AM">亚美尼亚</option>
+                                    <option value="IL">以色列</option>
+                                    <option value="IQ">伊拉克</option>
+                                    <option value="IR">伊朗</option>
+                                    <option value="BZ">伯利兹</option>
+                                    <option value="CV">佛得角</option>
+                                    <option value="RU">俄罗斯</option>
+                                    <option value="BG">保加利亚</option>
+                                    <option value="HR">克罗地亚</option>
+                                    <option value="GU">关岛</option>
+                                    <option value="GM">冈比亚</option>
+                                    <option value="IS">冰岛</option>
+                                    <option value="GN">几内亚</option>
+                                    <option value="GW">几内亚比绍</option>
+                                    <option value="LI">列支敦士登</option>
+                                    <option value="CG">刚果（布）</option>
+                                    <option value="CD">刚果（金）</option>
+                                    <option value="LY">利比亚</option>
+                                    <option value="LR">利比里亚</option>
+                                    <option value="CA">加拿大</option>
+                                    <option value="GH">加纳</option>
+                                    <option value="GA">加蓬</option>
+                                    <option value="HU">匈牙利</option>
+                                    <option value="KP">北朝鲜</option>
+                                    <option value="MP">北马里亚纳群岛</option>
+                                    <option value="GS">南乔治亚/南桑威奇群岛</option>
+                                    <option value="AQ">南极洲</option>
+                                    <option value="SS">南非</option>
+                                    <option value="ZA">南非</option>
+                                    <option value="BW">博茨瓦纳</option>
+                                    <option value="QA">卡塔尔</option>
+                                    <option value="RW">卢旺达</option>
+                                    <option value="LU">卢森堡</option>
+                                    <option value="ID">印尼</option>
+                                    <option value="IN">印度</option>
+                                    <option value="GT">危地马拉</option>
+                                    <option value="EC">厄瓜多尔</option>
+                                    <option value="ER">厄立特里亚</option>
+                                    <option value="SY">叙利亚</option>
+                                    <option value="CU">古巴</option>
+                                    <option value="TW">台湾</option>
+                                    <option value="KG">吉尔吉斯斯坦</option>
+                                    <option value="DJ">吉布提</option>
+                                    <option value="KZ">哈萨克斯坦</option>
+                                    <option value="CO">哥伦比亚</option>
+                                    <option value="CR">哥斯达黎加</option>
+                                    <option value="CM">喀麦隆</option>
+                                    <option value="TV">图瓦卢</option>
+                                    <option value="TM">土库曼斯坦</option>
+                                    <option value="TR">土耳其</option>
+                                    <option value="LC">圣卢西亚</option>
+                                    <option value="KN">圣基茨和尼维斯</option>
+                                    <option value="VC">圣文森特和格林纳丁斯</option>
+                                    <option value="PM">圣皮埃尔和密克隆</option>
+                                    <option value="CX">圣诞岛</option>
+                                    <option value="BV">圣诞岛</option>
+                                    <option value="SH">圣赫勒拿</option>
+                                    <option value="MF">圣马丁（法国部分）</option>
+                                    <option value="SX">圣马丁（法国部分）</option>
+                                    <option value="SM">圣马力诺</option>
+                                    <option value="GY">圭亚那</option>
+                                    <option value="TZ">坦桑尼亚</option>
+                                    <option value="EG">埃及</option>
+                                    <option value="ET">埃塞俄比亚</option>
+                                    <option value="KI">基里巴斯</option>
+                                    <option value="TJ">塔吉克斯坦</option>
+                                    <option value="SN">塞内加尔</option>
+                                    <option value="RS">塞尔维亚</option>
+                                    <option value="SL">塞拉利昂</option>
+                                    <option value="CY">塞浦路斯</option>
+                                    <option value="SC">塞舌尔</option>
+                                    <option value="MX">墨西哥</option>
+                                    <option value="TG">多哥</option>
+                                    <option value="DM">多米尼克</option>
+                                    <option value="DO">多米尼加共和国</option>
+                                    <option value="AT">奥地利</option>
+                                    <option value="VE">委内瑞拉</option>
+                                    <option value="BD">孟加拉国</option>
+                                    <option value="AO">安哥拉</option>
+                                    <option value="AI">安圭拉</option>
+                                    <option value="AG">安提瓜和巴布达</option>
+                                    <option value="AD">安道尔</option>
+                                    <option value="FM">密克罗尼西亚</option>
+                                    <option value="NI">尼加拉瓜</option>
+                                    <option value="NG">尼日利亚</option>
+                                    <option value="NE">尼日尔</option>
+                                    <option value="NP">尼泊尔</option>
+                                    <option value="PS">巴勒斯坦领土</option>
+                                    <option value="BS">巴哈马</option>
+                                    <option value="PK">巴基斯坦</option>
+                                    <option value="BB">巴巴多斯</option>
+                                    <option value="PG">巴布亚新几内亚</option>
+                                    <option value="PY">巴拉圭</option>
+                                    <option value="PA">巴拿马</option>
+                                    <option value="BH">巴林</option>
+                                    <option value="BR">巴西</option>
+                                    <option value="BF">布基纳法索</option>
+                                    <option value="BI">布隆迪</option>
+                                    <option value="GR">希腊</option>
+                                    <option value="CK">库克群岛</option>
+                                    <option value="CW">库拉索</option>
+                                    <option value="KY">开曼群岛</option>
+                                    <option value="DE">德国</option>
+                                    <option value="IT">意大利</option>
+                                    <option value="SB">所罗门群岛</option>
+                                    <option value="TK">托克劳</option>
+                                    <option value="LV">拉脱维亚</option>
+                                    <option value="NO">挪威</option>
+                                    <option value="CZ">捷克共和国</option>
+                                    <option value="MD">摩尔多瓦</option>
+                                    <option value="MA">摩洛哥</option>
+                                    <option value="MC">摩纳哥</option>
+                                    <option value="BN">文莱</option>
+                                    <option value="FJ">斐济</option>
+                                    <option value="SZ">斯威士兰</option>
+                                    <option value="SK">斯洛伐克</option>
+                                    <option value="SI">斯洛文尼亚</option>
+                                    <option value="SJ">斯瓦尔巴岛和扬马延岛</option>
+                                    <option value="LK">斯里兰卡</option>
+                                    <option value="SG">新加坡</option>
+                                    <option value="NC">新喀里多尼亚</option>
+                                    <option value="JE">新泽西</option>
+                                    <option value="NZ">新西兰</option>
+                                    <option value="JP">日本</option>
+                                    <option value="CL">智利</option>
+                                    <option value="KH">柬埔寨</option>
+                                    <option value="GG">格恩西</option>
+                                    <option value="GD">格林纳达</option>
+                                    <option value="GL">格陵兰</option>
+                                    <option value="GE">格鲁吉亚</option>
+                                    <option value="VA">梵帝冈</option>
+                                    <option value="BE">比利时</option>
+                                    <option value="MR">毛里塔尼亚</option>
+                                    <option value="MU">毛里求斯</option>
+                                    <option value="TO">汤加</option>
+                                    <option value="SA">沙特阿拉伯</option>
+                                    <option value="FR">法国</option>
+                                    <option value="TF">法国南部领土</option>
+                                    <option value="GF">法属圭亚那</option>
+                                    <option value="PF">法属波利尼西亚</option>
+                                    <option value="FO">法罗群岛</option>
+                                    <option value="PL">波兰</option>
+                                    <option value="PR">波多黎各</option>
+                                    <option value="BA">波斯尼亚和黑塞哥维那</option>
+                                    <option value="TH">泰国</option>
+                                    <option value="ZW">津巴布韦</option>
+                                    <option value="HN">洪都拉斯</option>
+                                    <option value="HT">海地</option>
+                                    <option value="AU">澳大利亚</option>
+                                    <option value="MO">澳门特别行政区，中国</option>
+                                    <option value="IE">爱尔兰共和国</option>
+                                    <option value="EE">爱沙尼亚</option>
+                                    <option value="JM">牙买加</option>
+                                    <option value="TC">特克斯和凯科斯群岛</option>
+                                    <option value="TT">特里尼达和多巴哥</option>
+                                    <option value="BO">玻利维亚</option>
+                                    <option value="NR">瑙鲁</option>
+                                    <option value="SE">瑞典</option>
+                                    <option value="CH">瑞士</option>
+                                    <option value="GP">瓜德罗普岛</option>
+                                    <option value="WF">瓦利斯群岛和富图纳群岛</option>
+                                    <option value="VU">瓦努阿图</option>
+                                    <option value="RE">留尼旺</option>
+                                    <option value="BY">白俄罗斯</option>
+                                    <option value="BM">百慕大</option>
+                                    <option value="PN">皮特凯恩</option>
+                                    <option value="GI">直布罗陀</option>
+                                    <option value="FK">福克兰群岛</option>
+                                    <option value="KW">科威特</option>
+                                    <option value="KM">科摩罗</option>
+                                    <option value="CC">科科斯（基林）群岛</option>
+                                    <option value="PE">秘鲁</option>
+                                    <option value="TN">突尼斯</option>
+                                    <option value="LT">立陶宛</option>
+                                    <option value="SO">索马里</option>
+                                    <option value="JO">约旦</option>
+                                    <option value="NA">纳米比亚</option>
+                                    <option value="NU">纽埃</option>
+                                    <option value="MM">缅甸</option>
+                                    <option value="RO">罗马尼亚</option>
+                                    <option value="VI">美属维尔京群岛</option>
+                                    <option value="AS">美属萨摩亚</option>
+                                    <option value="LA">老挝</option>
+                                    <option value="KE">肯尼亚</option>
+                                    <option value="FI">芬兰</option>
+                                    <option value="SD">苏丹</option>
+                                    <option value="SR">苏里南</option>
+                                    <option value="IO">英属印度洋领地</option>
+                                    <option value="VG">英属维尔京群岛</option>
+                                    <option value="AX">英属维尔京群岛</option>
+                                    <option value="NL">荷兰</option>
+                                    <option value="MZ">莫桑比克</option>
+                                    <option value="LS">莱索托</option>
+                                    <option value="PH">菲律宾</option>
+                                    <option value="SV">萨尔瓦多</option>
+                                    <option value="WS">萨摩亚群岛</option>
+                                    <option value="PT">葡萄牙</option>
+                                    <option value="MN">蒙古国</option>
+                                    <option value="MS">蒙特塞拉特</option>
+                                    <option value="EH">西撒哈拉</option>
+                                    <option value="ES">西班牙</option>
+                                    <option value="NF">诺福克岛</option>
+                                    <option value="CI">象牙海岸</option>
+                                    <option value="BJ">贝宁</option>
+                                    <option value="ZM">赞比亚</option>
+                                    <option value="GQ">赤道几内亚</option>
+                                    <option value="HM">赫德岛和麦克唐纳群岛</option>
+                                    <option value="VN">越南</option>
+                                    <option value="AZ">阿塞拜疆</option>
+                                    <option value="AF">阿富汗</option>
+                                    <option value="DZ">阿尔及利亚</option>
+                                    <option value="AL">阿尔巴尼亚</option>
+                                    <option value="AE">阿拉伯联合酋长国</option>
+                                    <option value="OM">阿曼</option>
+                                    <option value="AR">阿根廷</option>
+                                    <option value="AW">阿鲁巴</option>
+                                    <option value="KR">韩国</option>
+                                    <option value="HK">香港特别行政区，中国</option>
+                                    <option value="MK">马其顿</option>
+                                    <option value="MV">马尔代夫</option>
+                                    <option value="IM">马恩岛</option>
+                                    <option value="MW">马拉维</option>
+                                    <option value="MQ">马提尼克</option>
+                                    <option value="MY">马来西亚</option>
+                                    <option value="YT">马约特岛</option>
+                                    <option value="MH">马绍尔群岛</option>
+                                    <option value="MT">马耳他</option>
+                                    <option value="MG">马达加斯加</option>
+                                    <option value="ML">马里</option>
+                                    <option value="LB">黎巴嫩</option>
+                                    <option value="ME">黑山</option></select>
+                                <noscript>&lt;input type="submit" name="woocommerce_checkout_update_totals" value="更新国家" /&gt;</noscript></p>
+                            <p class="form-row form-row form-row-wide address-field validate-required" id="billing_address_1_field">
+                                <label for="billing_address_1" class="">地址
+                                    <abbr class="required" title="(必填)">*</abbr></label>
+                                <input type="text" class="input-text " name="billing_address_1" id="billing_address_1" placeholder="街道地址" autocomplete="address-line1" value=""></p>
+                            <p class="form-row form-row form-row-wide address-field" id="billing_address_2_field">
+                                <input type="text" class="input-text " name="billing_address_2" id="billing_address_2" placeholder="几号楼几单元. (可选)" autocomplete="address-line2" value=""></p>
+                            <p class="form-row form-row form-row-wide address-field validate-required" id="billing_city_field" data-o_class="form-row form-row form-row-wide address-field validate-required">
+                                <label for="billing_city" class="">镇/市
+                                    <abbr class="required" title="(必填)">*</abbr></label>
+                                <input type="text" class="input-text " name="billing_city" id="billing_city" placeholder="" autocomplete="address-level2" value=""></p>
+                            <p class="form-row form-row form-row-first address-field validate-state woocommerce-invalid woocommerce-invalid-required-field validate-required" id="billing_state_field" data-o_class="form-row form-row form-row-first address-field validate-required validate-state woocommerce-invalid woocommerce-invalid-required-field">
+                                <label for="billing_state" class="">省
+                                    <abbr class="required" title="(必填)">*</abbr></label>
+                                <select name="billing_state" id="billing_state" class="state_select " data-placeholder="" autocomplete="address-level1" tabindex="-1" title="省 *">
+                                    <option value="">选择一个选项…</option>
+                                    <option value="CN1">云南</option>
+                                    <option value="CN2">北京</option>
+                                    <option value="CN3">天津</option>
+                                    <option value="CN4">河北</option>
+                                    <option value="CN5">山西</option>
+                                    <option value="CN6">內蒙古</option>
+                                    <option value="CN7">辽宁</option>
+                                    <option value="CN8">吉林</option>
+                                    <option value="CN9">黑龙江</option>
+                                    <option value="CN10">上海</option>
+                                    <option value="CN11">江苏</option>
+                                    <option value="CN12">浙江</option>
+                                    <option value="CN13">安徽</option>
+                                    <option value="CN14">福建</option>
+                                    <option value="CN15">江西</option>
+                                    <option value="CN16">山东</option>
+                                    <option value="CN17">河南</option>
+                                    <option value="CN18">湖北</option>
+                                    <option value="CN19">湖南</option>
+                                    <option value="CN20">广东</option>
+                                    <option value="CN21">广西壮族</option>
+                                    <option value="CN22">海南</option>
+                                    <option value="CN23">重庆</option>
+                                    <option value="CN24">四川</option>
+                                    <option value="CN25">贵州</option>
+                                    <option value="CN26">陕西</option>
+                                    <option value="CN27">甘肃</option>
+                                    <option value="CN28">青海</option>
+                                    <option value="CN29">宁夏</option>
+                                    <option value="CN30">澳门</option>
+                                    <option value="CN31">西藏</option>
+                                    <option value="CN32">新疆</option></select>
+                            </p>
+                            <p class="form-row form-row form-row-last address-field validate-required validate-postcode" id="billing_postcode_field" data-o_class="form-row form-row form-row-last address-field validate-required validate-postcode">
+                                <label for="billing_postcode" class="">邮政编码
+                                    <abbr class="required" title="(必填)">*</abbr></label>
+                                <input type="text" class="input-text " name="billing_postcode" id="billing_postcode" placeholder="" autocomplete="postal-code" value=""></p>
+                            <div class="clear"></div>
+                            <p class="form-row form-row-wide create-account woocommerce-validated">
+                                <input class="input-checkbox" id="createaccount" type="checkbox" name="createaccount" value="1">
+                                <label for="createaccount" class="checkbox">创建一个帐户？</label></p>
+                            <div class="create-account" style="display: none;">
+                                <p>输入下列信息以注册帐号。老顾客请在页面顶部登录。</p>
+                                <p class="form-row form-row validate-required" id="account_password_field">
+                                    <label for="account_password" class="">账户密码
+                                        <abbr class="required" title="(必填)">*</abbr></label>
+                                    <input type="password" class="input-text " name="account_password" id="account_password" placeholder="密码" value=""></p>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="woocommerce-shipping-fields">
+                            <h3>其他信息</h3>
+                            <p class="form-row form-row notes" id="order_comments_field">
+                                <label for="order_comments" class="">订单备注</label>
+                                <textarea name="order_comments" class="input-text " id="order_comments" placeholder="为您的订单添加备注，例如：送货特别注意事项。" rows="2" cols="5"></textarea>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <h3 id="order_review_heading">你的订单</h3>
+                <div id="order_review" class="woocommerce-checkout-review-order">
+                    <table class="shop_table woocommerce-checkout-review-order-table">
+                        <thead>
+                            <tr>
+                                <th class="product-name">产品</th>
+                                <th class="product-total">合计</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr class="cart_item">
+                                <td class="product-name">花茶&nbsp;
+                                    <strong class="product-quantity">× 4</strong></td>
+                                <td class="product-total">
+                                    <span class="woocommerce-Price-amount amount">
+                                        <span class="woocommerce-Price-currencySymbol">¥</span>72.00</span></td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr class="cart-subtotal">
+                                <th>小计</th>
+                                <td>
+                                    <span class="woocommerce-Price-amount amount">
+                                        <span class="woocommerce-Price-currencySymbol">¥</span>72.00</span></td>
+                            </tr>
+                            <tr class="order-total">
+                                <th>合计</th>
+                                <td>
+                                    <strong>
+                                        <span class="woocommerce-Price-amount amount">
+                                            <span class="woocommerce-Price-currencySymbol">¥</span>72.00</span></strong>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <div id="payment" class="woocommerce-checkout-payment">
+                        <ul class="wc_payment_methods payment_methods methods">
+                            <li class="wc_payment_method payment_method_cod">
+                                <input id="payment_method_cod" type="radio" class="input-radio" name="payment_method" value="cod" data-order_button_text="">
+                                <label for="payment_method_cod">货到付款</label>
+                                <div class="payment_box payment_method_cod" style="display:none;">
+                                    <p>交货时使用现金支付.</p>
+                                </div>
+                            </li>
+                            <li class="wc_payment_method payment_method_alipay">
+                                <input id="payment_method_alipay" type="radio" class="input-radio" name="payment_method" value="alipay" data-order_button_text="到支付宝付款">
+                                <label for="payment_method_alipay">支付宝
+                                    <img src="http://tl.kissneck.cn/wp-content/plugins/alipay-for-woocommerce/images/alipay.png" alt="支付宝"></label>
+                                <div class="payment_box payment_method_alipay" style="display:none;">
+                                    <p>使用支付宝付款，如果您没有支付宝账户，也可通过借记卡或信用卡付款。</p>
+                                </div>
+                            </li>
+                            <li class="wc_payment_method payment_method_wechatpay">
+                                <input id="payment_method_wechatpay" type="radio" class="input-radio" name="payment_method" value="wechatpay" checked="checked" data-order_button_text="使用微信扫码支付">
+                                <label for="payment_method_wechatpay">微信支付
+                                    <img src="http://tl.kissneck.cn/wp-content/plugins/wechat-weixin-payments-for-woocommerce/images/wechatpay.png" alt="微信支付"></label>
+                                <div class="payment_box payment_method_wechatpay">
+                                    <p>通过微信支付，如果没有微信账号，也可以绑定卡号支付</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="form-row place-order">
+                            <noscript>由于您的浏览器不支持JavaScript，或者它被禁用，在你付款之前请确保你单击的&lt;em&gt;更新总计&lt;/em&gt;按钮，如果你不这样做，你可能会支付超过上述金额。 &lt;br/&gt;&lt;input type="submit" class="button alt" name="woocommerce_checkout_update_totals" value="更新总数" /&gt;</noscript>
+                            <input type="submit" class="button alt" name="woocommerce_checkout_place_order" id="place_order" value="使用微信扫码支付" data-value="下单">
+                            <input type="hidden" id="_wpnonce" name="_wpnonce" value="9a9bbfaf83">
+                            <input type="hidden" name="_wp_http_referer" value="/checkout/?wc-ajax=update_order_review"></div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+	<!-- 页脚 -->
+	<footer class="footer">
+		<div class="security">
+			<img src="images/ban.jpg" alt="">
+            <div class="security-mobile">
+                <img src="images/ban1.jpg" alt="">
+                <img src="images/ban2.jpg" alt="">
+                <img src="images/ban4.jpg" alt="">
+                <img src="images/ban3.jpg" alt="">
+            </div>
+		</div>
+
+		<div class="footer-container clearfix">
+			<div class="footer-content clearfix">
+				<div class="footer-widget">
+					<h3 class="footer-widget-heading">购物指南</h3>
+					<ul>
+						<li><a href="about.html" target="_blank" title="购物流程">购物流程</a></li>
+						<li><a href="about.html" target="_blank" title="会员介绍">会员介绍</a></li>
+						<li><a href="about.html" target="_blank" title="常见问题">常见问题</a></li>
+						<li><a href="about.html" target="_blank" title="联系客服">联系客服</a></li>
+					</ul>
+				</div>
+				<div class="footer-widget">
+					<h3 class="footer-widget-heading">配送方式</h3>
+					<ul>
+						<li><a href="about.html" target="_blank" title="配送范围">配送范围</a></li>
+						<li><a href="about.html" target="_blank" title="验货及签收">验货及签收</a></li>
+						<li><a href="about.html" target="_blank" title="物流进度查询">物流进度查询</a></li>
+					</ul>
+				</div>
+				<div class="footer-widget">
+					<h3 class="footer-widget-heading">支付方式</h3>
+					<ul>
+						<li><a href="about.html" target="_blank" title="配送范围">在线支付</a></li>
+					</ul>
+				</div>
+				<div class="footer-widget">
+					<h3 class="footer-widget-heading">售后服务</h3>
+					<ul>
+						<li><a href="about.html" target="_blank" title="售后政策">售后政策</a></li>
+						<li><a href="about.html" target="_blank" title="商品退还细则">商品退还细则</a></li>
+						<li><a href="about.html" target="_blank" title="退换货流程">退换货流程</a></li>
+						<li><a href="about.html" target="_blank" title="余额体现">余额体现</a></li>
+						<li><a href="about.html" target="_blank" title="售后服务">售后服务</a></li>
+					</ul>
+				</div>
+				<div class="footer-widget">
+					<h3 class="footer-widget-heading">自助服务</h3>
+					<ul>
+						<li><a href="about.html" target="_blank" title="退换货申请">退换货申请</a></li>
+						<li><a href="about.html" target="_blank" title="在线投诉">在线投诉</a></li>
+						<li><a href="about.html" target="_blank" title="分销商入驻流程">分销商入驻流程</a></li>
+					</ul>
+				</div>
+				<div class="footer-widget">
+					<h3 class="footer-widget-heading">服务监督中心</h3>
+					<ul>
+						<li><a href="about.html" target="_blank" title="监督邮箱">监督邮箱</a></li>
+						<li><a href="about.html" target="_blank" title="温馨提示">温馨提示</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer-copyright">
+			<div class="footer-copyrght-content clearfix">
+				<span>Copyright &copyright; 2016 <a href="">公司网站名称</a> All Rights Reserved.</span>
+				<div class="footer-sns">
+					<h3>关注我们：</h3>
+					<a href="#" target="_blank" title="新浪微博" class="sns-sina">新浪微博</a>
+					<a href="#" target="_blank" title="腾讯微博" class="sns-tent">腾讯微博</a>
+					<a href="#" target="_blank" title="腾讯空间" class="sns-qzone">腾讯空间</a>
+					<a href="#" target="_blank" title="facebook" class="sns-facebook">facebook</a>
+					<a href="#" target="_blank" title="twitter" class="sns-twitter">twitter</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- 回到顶部 -->
+	<div class="totop">
+		<img src="images/ttop.png" alt="">
+	</div>
+    <!-- 在线咨询 -->
+    <div id="service-open">点击在线咨询</div>
+    <div id="service">
+        <div id="service-close">关 闭</div>
+        <div class="service-head">
+            <img src="http://tl.kissneck.cn/wp-content/themes/pro-theme/images/weixin.png">
+        </div>
+        <p>联系电话</p>
+        <p>0769-2318488</p>
+        <p>工作时间</p>
+        <p>周一至周日</p>
+        <p>8:00-17:00</p>
+    </div>
+	<script src="js/jquery-1.9.1.min.js"></script>
+	<script src="js/header.js"></script>
+	<script src="js/silde.js"></script>
+	<script src="js/animation.js"></script>
+	<script src="js/layer/layer.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/checkout.min.js"></script>
+</body>
+</html>

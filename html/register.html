@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>	
+	<meta charset="utf-8">
+	<title>茶</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/footer.css">
+</head>
+<body>		
+	<!-- 注册弹窗 -->
+	<div class="register">
+		<form method="POST" action="" onsubmit="">
+		    <div id="Resdiv">
+		        <table width="100%" cellpadding="3" cellspacing="3" id="Res" border="0">
+		            <input type="hidden" name="is_set_option" value="0" required>
+		            <tbody>
+		                <tr>
+		                    <td width="100" align="right" class="itemName">
+		                        <span class="redfont">*</span>会员名:</td>
+		                    <td>
+		                        <input type="text" name="username" check="^[a-zA-Z0-9_]{4,20}$" warning="请填写字母或数字的用户名" placeholder="" maxlength="20" onblur="ajaxCheck(this);" required></td>
+		                </tr>
+		                <tr>
+		                    <td align="right" class="itemName">
+		                        <span class="redfont">*</span>密　码:</td>
+		                    <td>
+		                        <input type="password" name="pwd" check="^[a-zA-Z0-9_]{6,20}$" warning="用户密码输入错误,需要6-16位字母、数字或者下划线组成" maxlength="20" placeholder="6-20位 必须字母和数字组合，不包含特殊符号" required></td>
+		                </tr>
+		                <tr>
+		                    <td align="right" class="itemName">
+		                        <span class="redfont">*</span>确认密码:</td>
+		                    <td>
+		                        <input type="password" name="pwd2" check="^[a-zA-Z0-9_]{6,20}$" warning="用户确认密码输入错误,需要6-16位字母、数字或者下划线组成" maxlength="20" placeholder="6-20位 必须字母和数字组合，不包含特殊符号" required></td>
+		                </tr>
+		                <tr>
+		                    <td align="right" class="itemName">
+		                        <span class="redfont">*</span>电子邮件:</td>
+		                    <td>
+		                        <input type="text" name="email" check="^[_\.0-9a-z-]+@([0-9a-z][0-9a-z-]+\.)+[a-z]{2,3}$" warning="请填写电子邮箱" onblur="ajaxCheck(this);" required></td>
+		                </tr>
+		                <tr>
+		                    <td align="right" class="itemName">昵称:</td>
+		                    <td>
+		                        <input type="text" name="nickname" <="" td=""></td>
+		                </tr>
+		                <tr>
+		                    <td align="right" class="itemName">手机:</td>
+		                    <td>
+		                        <input type="text" name="phone" id="phone"></td>
+		                </tr>
+		                <tr>
+		                    <td align="right" class="itemName">真实姓名:</td>
+		                    <td>
+		                        <input type="text" name="name"></td>
+		                </tr>
+		                <tr>
+		                    <td align="right" class="itemName" >电话:</td>
+		                    <td>
+		                        <input type="text" name="tel"></td>
+		                </tr>
+		                <tr>
+		                    <td align="right" class="itemName">省份:</td>
+		                    <td>
+		                        <input type="text" name="province" size="10"></td>
+		                </tr>
+		                <tr>
+		                    <td align="right" class="itemName">城市:</td>
+		                    <td>
+		                        <input type="text" name="city" size="10"></td>
+		                </tr>
+		                <tr>
+		                    <td align="right" class="itemName">详细地址:</td>
+		                    <td>
+		                        <input type="text" name="address" size="40"></td>
+		                </tr>
+		                <tr>
+		                    <td align="right" class="itemName">邮政编码:</td>
+		                    <td>
+		                        <input type="text" name="pcode" size="10"></td>
+		                </tr>
+		                <tr>
+		                    <td align="right" class="itemName">单位:</td>
+		                    <td>
+		                        <input type="text" name="org"></td>
+		                </tr>
+		                <tr>
+		                    <td align="right" class="itemName">联系人:</td>
+		                    <td>
+		                        <input type="text" name="contactor"></td>
+		                </tr>
+		                <tr>
+		                    <td align="right" class="itemName">
+		                        <span class="redfont">*</span>验证码:</td>
+		                    <td>
+		                        <input name="code" type="text" size="10" id="code" maxlength="5" check="^[0-9_]{5}$" warning="验证码输入错误,需要5位组成">
+		                        <img src="images/code.png" align="absmiddle"></td>
+		                </tr>
+		            </tbody>
+		        </table>
+		    </div>
+		    <div id="showbtn">
+		        <input type="submit" value="注册会员" class="btn"></div>
+		</form>
+	</div>
+</body>
+</html>

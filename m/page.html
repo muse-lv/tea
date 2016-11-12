@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>  
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="description" content="不超过150个字符"/>
+    <meta name="keywords" content=""/>
+    <meta name="author" content="name, email@gmail.com"/>
+    <meta name="robots" content="index,follow"/>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=3, minimum-scale=1, user-scalable=no">    
+    <meta name="apple-mobile-web-app-title" content="标题">
+    <meta name="apple-mobile-web-app-capable" content="yes"/> 
+    <meta name="apple-itunes-app" content="app-id=myAppStoreID, affiliate-data=myAffiliateData, app-argument=myURL">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="format-detection" content="telphone=no, email=no"/>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="HandheldFriendly" content="true">
+    <meta name="MobileOptimized" content="320">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="browsermode" content="application">
+    <meta name="x5-page-mode" content="app">
+    <meta name="msapplication-tap-highlight" content="no">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="js/layui/css/layui.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<title>茶</title>
+</head>
+<body>
+	<!-- 头部幻灯片 -->
+	<div class="page-img">						
+	    <div class="page-swiper-container swiper-container">
+	        <div class="swiper-wrapper">
+	            <div class="swiper-slide"><img src="images/p16.jpg"></div>
+	            <div class="swiper-slide"><img src="images/p17.jpg"></div>
+	            <div class="swiper-slide"><img src="images/p18.jpg"></div>
+	        </div>
+	        <div class="swiper-pagination"></div>
+	    </div>
+	</div>
+	<!-- 购买 -->
+	<div class="page-buy clearfix">
+		<div class="page-buy-title clearfix">
+			<span>包邮</span><h3>早春新茶</h3>
+		</div>
+		<div class="page-buy-num">
+			<span class="price">￥ 85.00 </span>
+			<span class="price-before">市场价￥115.90</span>
+			<span class="num">库存：<span>1000</span>销量：<span>235</span></span>
+		</div>
+	</div>
+	<!-- 分隔 -->
+	<div class="divide clearfix"></div>
+	<!-- 规格数量 -->
+	<div class="page-type">
+		<span>请选择商品规格及数量</span>
+		<i class="layui-icon">&#xe602;</i>
+	</div>
+	<!-- 分隔 -->
+	<div class="divide clearfix"></div>
+	<!-- 链接 -->
+	<div class="page-link">
+		<div class="link-logo">
+			<a href="index.html"><img src="images/logo.jpg" alt=""></a>
+			<div class="link-logo-text">
+				<h2>茶</h2>
+				<p>全部宝贝<span> 55 </span>个</p>
+			</div>
+		</div>
+		<a href="products.html">查看全部商品</a>
+		<a href="index.html">进店逛逛</a>
+	</div>
+	<!-- 分隔 -->
+	<div class="divide"></div>
+	<!-- 详情 -->
+	<div class="details">
+		<div class="layui-tab layui-tab-card" lay-filter="tab">
+		    <ul class="layui-tab-title">
+		        <li class="layui-this">图文详情</li>
+		        <li>产品参数</li>
+		        <li>用户评价</li>
+		        <li>同店推荐</li></ul>
+		    <div class="layui-tab-content">
+		        <div class="layui-tab-item layui-show img-text">
+		        	<p>早春绿茶一般在3到4月份上市，有明前绿茶和雨前绿茶之分，明前绿茶是一些茶农为求其鲜嫩，在清明节前就开始采茶，珍贵稀少，因而有“明前茶，贵如金”之说，雨前茶是雨水节气前采摘的茶，品质也比较好。</p>
+		        	<img src="images/p10.jpg" alt="">
+		        	<img src="images/p13.jpg" alt="">
+		        	<img src="images/p16.jpg" alt="">
+		        </div>
+		        <div class="layui-tab-item data">
+					<p>12包/袋；</p>
+					<p>100g/包。</p>
+		        </div>
+		        <div class="layui-tab-item reviews">
+					<div class="reviews-add-content">
+		                <form action="#" method="post" id="commentform" class="comment-form">
+		                    <p class="comment-form-rating">
+		                        <label for="rating">你的评级</label>
+		                        <select name="rating" id="rating" aria-required="true" required="" style="display: none;">
+		                            <option value="">评价…</option>
+		                            <option value="5">完美</option>
+		                            <option value="4">很好</option>
+		                            <option value="3">普通</option>
+		                            <option value="2">还行</option>
+		                            <option value="1">极差</option></select>
+		                    </p>
+		                    <p class="comment-form-comment">
+		                        <label for="comment">你的评论
+		                            <span class="required">*</span></label>
+		                        <textarea id="comment" name="comment" cols="45" rows="8" aria-required="true" required=""></textarea>
+		                    </p>
+		                    <p class="form-submit">
+		                        <input name="submit" type="submit" id="submit" class="submit" value="提交"></p>
+		                </form>
+		            </div>
+		        </div>
+		        <div class="layui-tab-item recommend">		        
+					<div class="products">
+						<div class="products-list">
+							<div class="products-item">
+								<div class="products-item-img">
+									<a href=""><img src="images/p7.jpg" alt=""></a>
+								</div>
+								<div class="products-item-text">
+									<p class="products-name">陈年普洱</p>
+									<span class="price">￥55.00 </span>
+									<span class="price-before">￥78.00</span>
+								</div>
+							</div>
+							<div class="products-item">
+								<div class="products-item-img">
+									<a href=""><img src="images/p8.jpg" alt=""></a>
+								</div>
+								<div class="products-item-text">
+									<p class="products-name">陈年普洱</p>
+									<span class="price">￥55.00 </span>
+									<span class="price-before">￥78.00</span>
+								</div>
+							</div>
+							<div class="products-item">
+								<div class="products-item-img">
+									<a href=""><img src="images/p7.jpg" alt=""></a>
+								</div>
+								<div class="products-item-text">
+									<p class="products-name">陈年普洱</p>
+									<span class="price">￥55.00 </span>
+									<span class="price-before">￥78.00</span>
+								</div>
+							</div>
+							<div class="products-item">
+								<div class="products-item-img">
+									<a href=""><img src="images/p8.jpg" alt=""></a>
+								</div>
+								<div class="products-item-text">
+									<p class="products-name">陈年普洱</p>
+									<span class="price">￥55.00 </span>
+									<span class="price-before">￥78.00</span>
+								</div>
+							</div>
+							<div class="products-item">
+								<div class="products-item-img">
+									<a href=""><img src="images/p7.jpg" alt=""></a>
+								</div>
+								<div class="products-item-text">
+									<p class="products-name">陈年普洱</p>
+									<span class="price">￥55.00 </span>
+									<span class="price-before">￥78.00</span>
+								</div>
+							</div>
+							<div class="products-item">
+								<div class="products-item-img">
+									<a href=""><img src="images/p8.jpg" alt=""></a>
+								</div>
+								<div class="products-item-text">
+									<p class="products-name">陈年普洱</p>
+									<span class="price">￥55.00 </span>
+									<span class="price-before">￥78.00</span>
+								</div>
+							</div>
+							<div class="products-item">
+								<div class="products-item-img">
+									<a href=""><img src="images/p7.jpg" alt=""></a>
+								</div>
+								<div class="products-item-text">
+									<p class="products-name">陈年普洱</p>
+									<span class="price">￥55.00 </span>
+									<span class="price-before">￥78.00</span>
+								</div>
+							</div>
+							<div class="products-item">
+								<div class="products-item-img">
+									<a href=""><img src="images/p8.jpg" alt=""></a>
+								</div>
+								<div class="products-item-text">
+									<p class="products-name">陈年普洱</p>
+									<span class="price">￥55.00 </span>
+									<span class="price-before">￥78.00</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+	        </div>
+		</div>
+	</div>
+
+	<!-- 购买弹窗 -->
+	<div class="win-buy" style="display: none;">	
+		<div class="win-buy-title">
+			<img src="images/logo.jpg" alt="">
+			<div class="win-buy-title-text">
+				<p class="price">￥85.00</p>
+				<p>库存：<span>100</span>件</p>
+			</div>
+		</div>
+		<div class="win-buy-num clearfix">
+			<span>购买数量</span>
+			<input type="number" name="sNun" step="1" min="1" max="" name="quantity" value="1" title="数量" class="input-text qty" size="4" pattern="[0-9]*" inputmode="numeric"></li>
+		</div>
+		<div class="win-buy-submit">
+			<button type="button">确认</button>
+		</div>
+	</div>
+
+	<!-- 分隔 -->
+	<div class="divide"></div>
+	<!-- 分隔 -->
+	<div class="divide"></div>
+	<!-- 分隔 -->
+	<div class="divide"></div>
+	<!-- 分隔 -->
+	<div class="divide"></div>
+	<!-- 页脚 -->
+	<!-- 页脚 -->
+	<footer>
+		<div class="footer-content">
+			<ul class="footer-menu page-menu">
+				<li><a><i class="layui-icon">&#xe600;</i>收藏</a></li>
+				<li><a href=""><i class="layui-icon">&#xe630;</i>购物车</a></li>
+				<li class="cart"><a href="">加入购物车</a></li>
+				<li class="buy"><a href="">立即购买</a></li>
+			</ul>
+		</div>
+	</footer>
+	
+
+	<script src="js/jquery-1.10.0.js"></script>
+	<script src="js/layui/layui.js"></script>
+	<script src="js/swiper-3.3.1.jquery.min.js"></script>
+	<script src="js/page.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+/*剔除多余标签，增加渲染效率*/
+html, body,  span, iframe, h1, h2, h3, p, a, 
+img, small, strong, dl, dt, dd, ol, ul, li, 
+form, label, table, tr, th, td { 
+    margin: 0;            
+    padding: 0; 
+    border: 0; 
+    outline: 0; 
+} 
+/*解决横屏竖屏文字大小问题*/
+html {
+  font-family: "Microsoft YaHei";      
+  -ms-text-size-adjust: 100%; 
+  -webkit-text-size-adjust: 100%; 
+}
+ /*兼容ie9以下的显示*/
+audio,
+canvas,
+progress,   
+video {
+  display: inline-block;
+}
+
+/**
+ * 在苹果4-7中正确显示
+ */
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+/**
+ * 去除在ie10中 active下灰色背景
+ * 去除在ios中的间隙
+ */
+a {
+  background-color: transparent; 
+  -webkit-text-decoration-skip: objects; 
+}
+:focus { 
+    outline: 0; 
+} 
+table { 
+    border-collapse: separate; 
+    border-spacing: 0; 
+} 
+caption, th, td { 
+    text-align: left; 
+    font-weight: normal; 
+} 
+a img, iframe { 
+    border: none; 
+} 
+a{
+  text-decoration: none;
+}
+a:visited{
+ text-decoration: none;
+}
+ol, ul { 
+    list-style: none; 
+} 
+input, textarea, select, button { 
+    font-size: 100%; 
+    font-family: inherit; 
+    margin：0；
+} 
+button,input { 
+  overflow: visible;
+}
+/* 禁止在火狐ie下的字体改变 */
+button,select { 
+  text-transform: none;
+}
+select { 
+    margin: inherit; 
+} 
+/* Fixes incorrect placement of numbers in ol’s in IE6/7 */ 
+ol { margin-left:2em; } 
+/* == clearfix == */ 
+.clearfix:after { 
+    content: " ";
+    display: block;
+    height: 0; 
+    clear: both; 
+    visibility: hidden; 
+} 
+.clearfix {display: inline-block;} 
+* html .clearfix {height: 1%;} 
+.clearfix {display: block;}
